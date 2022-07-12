@@ -1,0 +1,10 @@
+# Ignore artifacts:
+.next
+node_modules
+.cache
+coverage/
+.DS_store
+npm-debug.log
+
+.gitignore
+.eslintignore

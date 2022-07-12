@@ -1,0 +1,52 @@
+{
+  "name": "cms-dash",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js, jsx, ts, tsx}": "eslint --fix",
+    "./**/*.{js, jsx, ts, tsx, json, html, css}": "prettier --write"
+  },
+  "dependencies": {
+    "next": "12.2.2",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-saga": "^1.1.3",
+    "redux-saga-routines": "^3.2.3",
+    "reselect": "^4.1.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-redux-saga": "^1.3.2",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "jest-cli": "^28.1.2",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.6"
+  }
+}
