@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    body {
+      @apply bg-base-500
+    }
+}
+
+@layer components {
+  /* /// Start AdminNavigation Component CSS /// */
+
+  #AdminNavList .navItem .link:hover {
+    @apply bg-[#3a35410a];
+  }
+  #AdminNavList .navItem.selected:not(.menu) .link {
+    @apply bg-gradient-to-l from-primary-500 to-primary-200;
+  }
+  #AdminNavList .navItem.menu.selected > .link {
+    @apply bg-[#3a35410a];
+  }
+
+  #AdminNavList .navItem.menu .menu-content .icon svg {
+    @apply h-3.5 w-3.5;
+  }
+
+  /* /// End AdminNavigation Component CSS /// */
+}

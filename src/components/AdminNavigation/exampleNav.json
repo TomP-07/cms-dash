@@ -1,0 +1,311 @@
+{
+  "activeItem": 0,
+  "activeMenu": 2,
+  "entries": [
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    },
+
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    },
+
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    },
+
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    },
+
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    },
+
+    {
+      "title": "Dashboard",
+      "icon": "home",
+      "url": "/admin"
+    },
+    {
+      "title": "Analytics",
+      "icon": "analytics",
+      "menu": {
+        "entries": [
+          {
+            "title": "Overview",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Products Analytics",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Products",
+      "icon": "products"
+    },
+    {
+      "title": "Users",
+      "icon": "users",
+      "menu": {
+        "entries": [
+          {
+            "title": "List",
+            "href": "/admin",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Add",
+            "icon": "circle-outline"
+          },
+          {
+            "title": "Permissions",
+            "icon": "circle-outline"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Settings",
+      "icon": "settings"
+    }
+  ]
+}
