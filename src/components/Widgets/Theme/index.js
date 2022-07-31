@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { getReactIconComponent } from "utilties/icons";
+import { getReactIconComponent } from "utils/icons";
 
 const ThemeWidget = ({className, children}) => {
     const Icon = getReactIconComponent('theme')

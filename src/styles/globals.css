@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 @layer base {
 
     body {
-      @apply bg-base-500
+      @apply bg-base-500 font-inter
     }
 }
 
@@ -27,4 +29,12 @@
   }
 
   /* /// End AdminNavigation Component CSS /// */
+  
+
+  .chart-label-list .btn,
+  .chart-label-list .btn-lg,
+  .chart-label-list .btn-sm,
+  .chart-label-list .btn-xs {
+      @apply font-medium text-sm inline-flex items-center justify-center border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out;
+  }
 }

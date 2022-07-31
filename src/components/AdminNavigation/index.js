@@ -1,36 +1,14 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 import { Component } from "react";
-import { getReactIconComponent, MaterioLogo } from "utilties/icons";
+import { getReactIconComponent, MaterioLogo } from "utils/icons";
 import classNames from "classnames";
 import { LazyMotion, domAnimation, m } from "framer-motion";
+import Image from "next/image";
+import LogoImageSrc from "/public/static/images/DashLogo.png"
 
 /*
     /// Depends on Tailwind, Global Style Sheet CSS & Framer Motion Library ///
-*/
-
-/*
-
-
-
-AdminNavigation {
-  AdminNavHeader {
-
-  }
-  AdminNavContent {
-    AdminNavEntry | AdminNavMenu {
-
-    }
-    Section {
-
-    }
-    AdminNavEntry | AdminNavMenu {
-
-    }
-    ...
-  }
-}
-
 */
 
 class AdminNavigation extends Component {
@@ -53,9 +31,9 @@ class AdminNavigation extends Component {
         {/* For Animation */}
         <m.div
           id="AdminNavWrapper"
-          animate={{ width: this.state.fixMode ? "16rem" : "4.4rem" }}
+          animate={{ "minWidth": this.state.fixMode ? "16rem" : "4.4rem" }}
           initial={false}
-          className={""}
+          className={"hidden lg:block"}
         >
           {/* Background overlay */}
           <div className="fixed hidden h-full w-full bg-[#3a3541] !opacity-0 opacity-50 transition-opacity"></div>
@@ -63,9 +41,9 @@ class AdminNavigation extends Component {
           <m.div
             onHoverStart={() => this.setExpanded(true)}
             onHoverEnd={() => this.setExpanded(false)}
-            animate={{ width: isExpanded ? "16rem" : "4.4rem" }}
+            animate={{ "minWidth": isExpanded ? "16rem" : "4.4rem" }}
             initial={false}
-            className="fixed h-[100vh] w-[5rem] overflow-hidden bg-base-500 py-4 transition-transform"
+            className="shadow-lg shadow-slate-400 fixed h-[100vh] w-[5rem] overflow-hidden bg-base-500 py-4 transition-transform"
           >
             {/* Content Header (Logo, Title ...) */}
             {this.renderHeader(isExpanded)}
@@ -93,23 +71,24 @@ class AdminNavigation extends Component {
       <div
         className={`${
           this.state.expanded ? "justify-start" : "max-w-[5rem] justify-center"
-        } header relative mb-6 flex`}
+        } header relative mb-0 flex mt-0`}
       >
         <Link href={"/"}>
           <a
             className={`${
-              isExpanded ? "ml-5" : "ml-0"
-            } flex cursor-pointer items-center p-1 `}
+              isExpanded ? "ml-7" : "ml-0 justify-center"
+            } flex cursor-pointer items-center p-1`}
           >
-            <div className={`${isExpanded ? "pr-3" : ""}`}>
-              <MaterioLogo />
+            <div className={`${isExpanded ? "mr-4" : "-ml-3"} w-[25px]`}>
+              <Image className="w-[]" src={LogoImageSrc}/>
+              {/* <MaterioLogo /> */}
             </div>
             <span
               className={`${
                 isExpanded ? "" : "hidden"
-              } title text-xl font-semibold uppercase`}
+              } title text-xl font-bold uppercase`}
             >
-              Materio
+              Company
             </span>
           </a>
         </Link>
@@ -165,7 +144,7 @@ class AdminNavigation extends Component {
     return (
       <li
         key={ID}
-        className={`${itemClass} navItem flex flex-col justify-center`}
+        className={`${itemClass} navItem flex flex-col justify-center my-2`}
       >
         {this.renderNavEntryContent({
           title: entry.title,
@@ -220,7 +199,8 @@ class AdminNavigation extends Component {
       <Link href={href}>
         <a
           onClick={onItemClick}
-          className={`link relative my-[5px] flex w-full cursor-pointer items-center rounded-tr-full rounded-br-full py-2 pl-5 pr-6`}
+          className={`link relative my-[5px] flex w-full cursor-pointer items-center rounded-tr-full rounded-br-full py-2 
+          ${this.state.expanded ? "pl-5 pr-9" : "pl-0 pr-0 flex justify-center items-center"}`}
         >
           {/* Render Nav Entry Icon */}
           <div

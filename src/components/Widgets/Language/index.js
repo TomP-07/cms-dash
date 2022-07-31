@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { getReactIconComponent } from "utilties/icons";
+import { getReactIconComponent } from "utils/icons";
 
 const LanguageWidget = ({className, children}) => {
     const Icon = getReactIconComponent('language')
