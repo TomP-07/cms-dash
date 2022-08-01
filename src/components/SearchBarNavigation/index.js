@@ -8,7 +8,7 @@ const SearchBarNavigation = ({}) => {
   return (
     <div className="flex items-center justify-between rounded-b-xl px-2 pt-3 pb-2 shadow-md shadow-slate-400">
       <SearchWidget>
-        <span className="text-text">Search (Ctrl+/)</span>
+        <span className="hidden text-text lg:inline">Search (Ctrl+/)</span>
       </SearchWidget>
       <div className="flex items-center justify-center">
         <LanguageWidget className={'mx-[4px] cursor-auto [&>*]:cursor-pointer'} />
