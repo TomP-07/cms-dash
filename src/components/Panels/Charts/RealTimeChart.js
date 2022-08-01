@@ -81,11 +81,14 @@ function RealTimeChart({ className }) {
 
   return (
     <div
-      className={`col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 ${className}`}>
+      className={`hidden lg:flex col-span-full flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 ${className}`}>
       <header className="flex items-center border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Real Time Chart #1</h2>
       </header>
+      <div>
       <RealtimeChart data={chartData} width={595} height={248} />
+      </div>
+      
     </div>
   );
 }

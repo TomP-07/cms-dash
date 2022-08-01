@@ -16,22 +16,22 @@ function TableList() {
             <thead className="rounded-sm bg-slate-50 text-xs uppercase text-slate-400">
               <tr>
                 <th className="p-2">
-                  <div className="text-left font-semibold">Source</div>
+                  <div className="mx-7 ml-0 truncate text-left font-semibold">Source</div>
                 </th>
                 <th className="p-2">
-                  <div className="text-center font-semibold">Data #1</div>
+                  <div className="mx-7 truncate text-center font-semibold">Data #1</div>
                 </th>
                 <th className="p-2">
-                  <div className="text-center font-semibold">Data #2</div>
+                  <div className="mx-7 truncate text-center font-semibold">Data #2</div>
                 </th>
                 <th className="p-2">
-                  <div className="text-center font-semibold">Profits</div>
+                  <div className="mx-7 truncate text-center font-semibold">Profits</div>
                 </th>
                 <th className="p-2">
-                  <div className="text-center font-semibold">Costs</div>
+                  <div className="mx-7 truncate text-center font-semibold">Costs</div>
                 </th>
                 <th className="p-2">
-                  <div className="text-center font-semibold">% Profit</div>
+                  <div className="mx-7 mr-0 truncate text-center font-semibold">% Profit</div>
                 </th>
               </tr>
             </thead>
@@ -46,7 +46,7 @@ function TableList() {
                       width="36"
                       height="36"
                     />
-                    <div className="text-slate-800">Source #1</div>
+                    <div className="text-slate-800 truncate">Source #1</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -75,7 +75,7 @@ function TableList() {
                       height="36"
                     />
 
-                    <div className="text-slate-800">Source #2</div>
+                    <div className="text-slate-800 truncate">Source #2</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -105,7 +105,7 @@ function TableList() {
                       height="36"
                     />
 
-                    <div className="text-slate-800">Source #3</div>
+                    <div className="text-slate-800 truncate">Source #3</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -135,7 +135,7 @@ function TableList() {
                       height="36"
                     />
 
-                    <div className="text-slate-800">Source #4</div>
+                    <div className="text-slate-800 truncate">Source #4</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -164,7 +164,7 @@ function TableList() {
                       width="36"
                       height="36"
                     />
-                    <div className="text-slate-800">Source #5</div>
+                    <div className="text-slate-800 truncate">Source #5</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -193,7 +193,7 @@ function TableList() {
                       width="36"
                       height="36"
                     />
-                    <div className="text-slate-800">Source #6</div>
+                    <div className="text-slate-800 truncate">Source #6</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -221,7 +221,7 @@ function TableList() {
                       width="36"
                       height="36"
                     />
-                    <div className="text-slate-800">Source #7</div>
+                    <div className="text-slate-800 truncate">Source #7</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -251,7 +251,7 @@ function TableList() {
                       height="36"
                     />
 
-                    <div className="text-slate-800">Source #8</div>
+                    <div className="text-slate-800 truncate">Source #8</div>
                   </div>
                 </td>
                 <td className="p-2">
@@ -281,7 +281,7 @@ function TableList() {
                       height="36"
                     />
 
-                    <div className="text-slate-800">Source #9</div>
+                    <div className="text-slate-800 truncate">Source #9</div>
                   </div>
                 </td>
                 <td className="p-2">
