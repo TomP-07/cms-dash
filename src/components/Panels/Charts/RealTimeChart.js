@@ -85,7 +85,7 @@ function RealTimeChart({ className }) {
       <header className="flex items-center border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Real Time Chart #1</h2>
       </header>
-      <div>
+      <div className="justify-self-stretch h-full flex flex-col">
       <RealtimeChart data={chartData} width={595} height={248} />
       </div>
       
