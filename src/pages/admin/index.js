@@ -15,7 +15,7 @@ const AdminHome = ({navData}) => {
       <div className="mt-4 mr-12 flex items-center justify-end py-8">
         <span className="text-right text-3xl font-bold">Welcome Tomás</span>
       </div>
-      <div className="mb-20 grid grid-cols-12 gap-6">
+      <div className="mb-20 grid grid-cols-12 gap-6 overflow-hidden">
         <SimpleChart className="" chartData={simpleChartData_1}>
           <h2 className="mb-2 text-lg font-semibold text-slate-800">Simple Chart #1</h2>
           <div className="mb-1 text-xs font-semibold uppercase text-slate-400">Profits</div>
