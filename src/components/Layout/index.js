@@ -1,24 +1,20 @@
-import PropTypes from "prop-types";
-import AdminNavigation from "components/AdminNavigation";
-import SearchBarNavigation from "components/SearchBarNavigation";
-import classNames from "classnames";
+import PropTypes from 'prop-types';
+import AdminNavigation from 'components/AdminNavigation';
+import SearchBarNavigation from 'components/SearchBarNavigation';
+import classNames from 'classnames';
 
 const Layout = ({ type, data = {}, className, children }) => {
   let layout;
   switch (type) {
-    case "admin":
+    case 'admin':
       layout = (
         <div className="flex">
           <AdminNavigation data={data} />
-          <div className="px-5 w-full max-w-[1450px] mx-auto">
+          <div className="mx-auto w-full max-w-[1450px] px-5">
             <header>
-              <SearchBarNavigation>
-
-              </SearchBarNavigation>
+              <SearchBarNavigation></SearchBarNavigation>
             </header>
-            <div className={classNames("", className)}>
-              {children}
-            </div>
+            <div className={classNames('', className)}>{children}</div>
           </div>
         </div>
       );

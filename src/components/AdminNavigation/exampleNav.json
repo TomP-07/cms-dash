@@ -5,28 +5,37 @@
     {
       "title": "Dashboard",
       "icon": "home",
-      "url": "/admin"
+      "href": "/admin"
     },
     {
       "title": "Products",
-      "icon": "products"
+      "icon": "products",
+      "href": "/admin"
+
     },
     {
       "title": "Analytics",
       "icon": "analytics",
+      "href": "/admin",
       "menu": {
         "entries": [
           {
             "title": "Overview",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           },
           {
             "title": "Products",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           },
           {
             "title": "Users",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           }
         ]
       }
@@ -34,15 +43,20 @@
     {
       "title": "Users",
       "icon": "users",
+      "href": "/admin",
       "menu": {
         "entries": [
           {
             "title": "Add / Remove",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           },
           {
             "title": "List",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           }
         ]
       }
@@ -50,22 +64,29 @@
     {
       "title": "Roles & Permissions",
       "icon": "users",
+      "href": "/admin",
       "menu": {
         "entries": [
           {
             "title": "Roles",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           },
           {
             "title": "Permissions",
-            "icon": "circle-outline"
+            "icon": "circle-outline",
+            "href": "/admin"
+
           }
         ]
       }
     },
     {
       "title": "Settings",
-      "icon": "settings"
+      "icon": "settings",
+      "href": "/admin"
+
     }
   ]
 }

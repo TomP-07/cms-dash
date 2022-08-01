@@ -1,20 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 
-import {
-  Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip,
-} from 'chart.js';
+import { Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip } from 'chart.js';
 import 'chartjs-adapter-moment';
 
 import { tailwindConfig, formatValue } from 'utils/utils';
 
 Chart.register(LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip);
 
-function LineChart({
-  data,
-  width,
-  height
-}) {
-
+function LineChart({ data, width, height }) {
   const canvas = useRef(null);
 
   useEffect(() => {
@@ -48,7 +41,7 @@ function LineChart({
           tooltip: {
             callbacks: {
               title: () => false, // Disable tooltip title
-              label: (context) => formatValue(context.parsed.y),
+              label: context => formatValue(context.parsed.y),
             },
           },
           legend: {
@@ -67,9 +60,7 @@ function LineChart({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <canvas ref={canvas} width={width} height={height}></canvas>
-  );
+  return <canvas ref={canvas} width={width} height={height}></canvas>;
 }
 
 export default LineChart;

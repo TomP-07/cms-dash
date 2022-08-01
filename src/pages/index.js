@@ -1,12 +1,3 @@
-const Home = ({}) => {};
-
-export async function getStaticProps(context) {
-  return {
-    redirect: {
-      destination: "/admin",
-      permanent: true,
-    },
-  };
-}
+const Home = () => {};
 
 export default Home;

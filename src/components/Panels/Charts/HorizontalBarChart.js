@@ -3,7 +3,6 @@ import BarChart from 'components/Charts/HorizontalBarChart01.js';
 import { tailwindConfig } from 'utils/utils';
 
 function HorizontalBarChart() {
-
   const chartData = {
     labels: ['Reasons'],
     datasets: [
@@ -39,7 +38,7 @@ function HorizontalBarChart() {
         barPercentage: 1,
         categoryPercentage: 1,
       },
-      
+
       {
         label: 'Data #5',
         data: [20],
@@ -52,14 +51,14 @@ function HorizontalBarChart() {
   };
 
   return (
-    <div className="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-slate-200">
-      <header className="px-5 py-4 border-b border-slate-100">
+    <div className="col-span-full rounded-sm border border-slate-200 bg-white shadow-lg xl:col-span-6">
+      <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Horizontal Bar Chart #1</h2>
       </header>
       <div className="px-5 py-3">
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-slate-800 mr-2">516</div>
-          <div className="text-sm font-semibold text-white px-1.5 bg-green-500 rounded-full">+32%</div>
+          <div className="mr-2 text-3xl font-bold text-slate-800">516</div>
+          <div className="rounded-full bg-green-500 px-1.5 text-sm font-semibold text-white">+32%</div>
         </div>
       </div>
       {/* Chart built with Chart.js 3 */}

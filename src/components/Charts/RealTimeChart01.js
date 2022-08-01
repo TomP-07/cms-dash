@@ -1,20 +1,13 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 
-import {
-  Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip,
-} from 'chart.js';
+import { Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip } from 'chart.js';
 import 'chartjs-adapter-moment';
 
 import { tailwindConfig, formatValue } from 'utils/utils';
 
 Chart.register(LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip);
 
-function RealTimeChart({
-  data,
-  width,
-  height
-}) {
-
+function RealTimeChart({ data, width, height }) {
   const canvas = useRef(null);
   const chartValue = useRef(null);
   const chartDeviation = useRef(null);
@@ -38,7 +31,7 @@ function RealTimeChart({
             suggestedMax: 80,
             ticks: {
               maxTicksLimit: 5,
-              callback: (value) => formatValue(value),
+              callback: value => formatValue(value),
             },
           },
           x: {
@@ -70,7 +63,7 @@ function RealTimeChart({
               weight: '600',
             },
             callbacks: {
-              label: (context) => formatValue(context.parsed.y),
+              label: context => formatValue(context.parsed.y),
             },
           },
         },
@@ -105,8 +98,10 @@ function RealTimeChart({
     <>
       <div className="px-5 py-3">
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-slate-800 mr-2 tabular-nums">$<span ref={chartValue}>57.81</span></div>
-          <div ref={chartDeviation} className="text-sm font-semibold text-white px-1.5 rounded-full"></div>
+          <div className="mr-2 text-3xl font-bold tabular-nums text-slate-800">
+            $<span ref={chartValue}>57.81</span>
+          </div>
+          <div ref={chartDeviation} className="rounded-full px-1.5 text-sm font-semibold text-white"></div>
         </div>
       </div>
       <div className="grow">

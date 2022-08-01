@@ -10,9 +10,7 @@ function DoughnutChart01() {
     datasets: [
       {
         label: 'Label',
-        data: [
-          45, 35, 20,
-        ],
+        data: [45, 35, 20],
         backgroundColor: [
           tailwindConfig().theme.colors.indigo[500],
           tailwindConfig().theme.colors.blue[400],
@@ -29,8 +27,8 @@ function DoughnutChart01() {
   };
 
   return (
-    <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-slate-200">
-      <header className="px-5 py-4 border-b border-slate-100">
+    <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-4">
+      <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Doughnut Chart #1</h2>
       </header>
       {/* Chart built with Chart.js 3 */}

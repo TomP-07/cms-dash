@@ -1,49 +1,51 @@
 import React from 'react';
 import { getReactIconComponent } from 'utils/icons';
 
-
 function TableList() {
-  const AccountSVG = getReactIconComponent('account')
+  const AccountSVG = getReactIconComponent('account');
   return (
-    <div className="col-span-full bg-white shadow-lg rounded-sm border border-slate-200">
-      <header className="px-5 py-4 border-b border-slate-100">
+    <div className="col-span-full rounded-sm border border-slate-200 bg-white shadow-lg">
+      <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Table List #1</h2>
       </header>
       <div className="p-3">
-
         {/* Table */}
         <div className="overflow-x-auto">
-          <table className="table-auto w-full">
+          <table className="w-full table-auto">
             {/* Table header */}
-            <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+            <thead className="rounded-sm bg-slate-50 text-xs uppercase text-slate-400">
               <tr>
                 <th className="p-2">
-                  <div className="font-semibold text-left">Source</div>
+                  <div className="text-left font-semibold">Source</div>
                 </th>
                 <th className="p-2">
-                  <div className="font-semibold text-center">Data #1</div>
+                  <div className="text-center font-semibold">Data #1</div>
                 </th>
                 <th className="p-2">
-                  <div className="font-semibold text-center">Data #2</div>
+                  <div className="text-center font-semibold">Data #2</div>
                 </th>
                 <th className="p-2">
-                  <div className="font-semibold text-center">Profits</div>
+                  <div className="text-center font-semibold">Profits</div>
                 </th>
                 <th className="p-2">
-                  <div className="font-semibold text-center">Costs</div>
+                  <div className="text-center font-semibold">Costs</div>
                 </th>
                 <th className="p-2">
-                  <div className="font-semibold text-center">% Profit</div>
+                  <div className="text-center font-semibold">% Profit</div>
                 </th>
               </tr>
             </thead>
             {/* Table body */}
-            <tbody className="text-sm font-medium divide-y divide-slate-100">
+            <tbody className="divide-y divide-slate-100 text-sm font-medium">
               {/* Row */}
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
                     <div className="text-slate-800">Source #1</div>
                   </div>
                 </td>
@@ -67,7 +69,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
 
                     <div className="text-slate-800">Source #2</div>
                   </div>
@@ -93,7 +99,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
 
                     <div className="text-slate-800">Source #3</div>
                   </div>
@@ -119,7 +129,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
 
                     <div className="text-slate-800">Source #4</div>
                   </div>
@@ -145,7 +159,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
                     <div className="text-slate-800">Source #5</div>
                   </div>
                 </td>
@@ -170,7 +188,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
                     <div className="text-slate-800">Source #6</div>
                   </div>
                 </td>
@@ -194,7 +216,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
                     <div className="text-slate-800">Source #7</div>
                   </div>
                 </td>
@@ -219,7 +245,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
 
                     <div className="text-slate-800">Source #8</div>
                   </div>
@@ -245,7 +275,11 @@ function TableList() {
               <tr>
                 <td className="p-2">
                   <div className="flex items-center">
-                    <AccountSVG className="shrink-0 mr-2 sm:mr-3 bg-slate-300 rounded-full p-1" width="36" height="36" />
+                    <AccountSVG
+                      className="mr-2 shrink-0 rounded-full bg-slate-300 p-1 sm:mr-3"
+                      width="36"
+                      height="36"
+                    />
 
                     <div className="text-slate-800">Source #9</div>
                   </div>
@@ -269,7 +303,6 @@ function TableList() {
               </tr>
             </tbody>
           </table>
-
         </div>
       </div>
     </div>
