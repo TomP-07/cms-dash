@@ -25,7 +25,6 @@ const NotificationsWidget = ({ className, children }) => {
       <button
         onClick={(e) => {
           e.preventDefault();
-          console.log("Clicked")
           setDropdownOpen(!dropdownOpen)
         }}
         ref={trigger}
@@ -41,7 +40,7 @@ const NotificationsWidget = ({ className, children }) => {
 
       <div
         className={`${dropdownOpen ? '' : 'hidden'
-          } fixed bottom-0 right-0 z-10 md:mt-1 w-full max-h-[60vh] md:absolute md:w-[28rem] md:top-full md:bottom-auto md:max-h-[60rem] origin-top-right overflow-y-scroll rounded border border-slate-200 bg-white py-1.5 shadow-lg sm:mr-0`}>
+          } scrollbar scrollbar-track-transparent scrollbar-thumb-scrollBar hover:scrollbar-thumb-scrollBar fixed bottom-0 right-0 z-10 md:mt-1 w-full max-h-[60vh] md:absolute md:w-[28rem] md:top-full md:bottom-auto md:max-h-[60rem] origin-top-right overflow-y-scroll rounded border border-slate-200 bg-white py-1.5 shadow-lg sm:mr-0`}>
         <div ref={dropdown} onFocus={() => setDropdownOpen(true)} onBlur={() => setDropdownOpen(false)}>
           <div className="px-4 pt-1.5 pb-2 text-xs font-semibold uppercase text-slate-400">Notifications</div>
           <ul>
